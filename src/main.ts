@@ -12,6 +12,6 @@ async function bootstrap() {
     credentials: true,
     exposedHeaders: 'set-cookie'
   })
-  await app.listen(5000);
+  await app.listen(5000) // default port is 3000;
 }
 bootstrap();

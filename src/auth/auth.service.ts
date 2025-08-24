@@ -48,6 +48,8 @@ export class AuthService {
         if(user){
             const tokens = this.issueTokens(user.id)
             return {user, ...tokens}    
+        } else {
+            throw new Error("WTF???")
         }
     }
 
